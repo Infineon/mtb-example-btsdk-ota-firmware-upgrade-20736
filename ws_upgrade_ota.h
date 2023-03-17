@@ -1,5 +1,5 @@
 /*
-* Copyright 2016-2022, Cypress Semiconductor Corporation (an Infineon company) or
+* Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company) or
 * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
 *
 * This software, including source code, documentation and related
@@ -149,7 +149,7 @@
 // To save 128 byte chunks to NVRAM, it would be best to receive 128 data packets from the peer
 // The ideal MTU is 131 which is 128 + 3 bytes of ATT header.
 #define WS_UPGRADE_LOCAL_MTU                (128 + sizeof(LEATT_PDU_WRITE_HDR))
-#define WS_UPGRADE_MTU_MAX                  512 // Maximum allowed by BT spec
+#define WS_UPGRADE_MTU_MAX                  512 // Maximum allowed by Bluetooth spec
 
 #pragma pack(1)
 
